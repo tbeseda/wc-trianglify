@@ -12,18 +12,21 @@
 </head>
 
 <body>
+  <wc-trianglify id="wc-trianglify"></wc-trianglify>
+  <header>
+    <h1>wc-trianglify</h1>
+  </header>
   <div>
-    <div>
-      <header>
-        <h1>wc-trianglify</h1>
-      </header>
-      <div>
-        <button>
-          <p>Trianglify!</p>
-        </button>
-      </div>
-    </div>
+    <button id="re-Trianglify">re-Trianglify!</button>
   </div>
+
+  <script>
+    const wc = window['wc-trianglify']
+    const btn = window['re-Trianglify']
+    btn.addEventListener('click', () => {
+      wc.trianglify()
+    })
+  </script>
 </body>
 
 </html>
